@@ -1,315 +1,620 @@
-<!-- webcoder assignment HTML snippet -->
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>Fun with Tennis</title>
+  <link rel="icon" type="image/png" href="images/tennis_ball.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Page tag title -->
-        <title>My First Webpage</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Customise CSS -->
-        <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    
-        <!-- Font awesome after themes and bootstrap -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+<!-- NAVIGATOR START -->
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>Pure CSS3 Menu</title>
+  <link href="menu_style.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="prefix-free.js"></script>
+<!-- NAVIGATOR STOP -->
 
-        <!-- Animate.css -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
-    
-        <!-- For development purposes Only -->
-            <!-- <style type="text/css">
-                body{border: 2px solid blue;}
-                .container{border: 2px solid green;}
-                .row{border: 2px dotted red;}
-                .row[class*='col-']{border: 3px solid purple;}
-                .show{border: 3px solid purple;}
-            </style> -->
-        <!-- To be commented out for production release -->
-    </head>
+<!-- For development purposes Only -->
+    <!-- <style type="text/css">
+        body{border: 2px solid blue;}
+        .container{border: 2px solid green;}
+        .row{border: 2px dotted red;}
+        .row[class*='col-']{border: 3px solid purple;}
+        .show{border: 3px solid purple;}
+    </style> -->
+<!-- To be commented out for production release -->
 
-    <body>
-        <!-- Top Navigation bar -->
-        <nav class="navbar fixed-top navbar-light bg-light">
-            <a class="navbar-brand" href="https://www.ibm.com/ibm/sg/en/" target="_blank">
-                <img src="brand-ibm.jpg" height="30" alt="">
-            </a>
-            <span class="navbar-text">
-                <a class="" href="http://point.sg.ibm.com:9500/#!/welcome" target="_blank">webcoder</a>
-            </span>
-        </nav>
 
-        <!-- Container - entire page contents -->
-        <div class="container">
-            <!-- Row1: Jumbotron -->
-            <div class="row">
-                <div class="col-xs-12
-                            col-sm-12
-                            col-md-12
-                            col-lg-12">
-                    <div class="jumbotron">
-                        <h1>Ben Website</h1>
-                        <p>Personal webpages...</p>
-                        <a class="btn btn-success btn-md" href="#" role="button">Learn more</a>
+</head>
+
+<body class="my-body" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- NAVIGATOR -->
+<!-- <div class="wrap"> -->
+	<nav>
+		<ul class="menu">
+			<li><a href="#"><span class="iconic home"></span> Home</a></li>
+			<li><a href="#"><span class="iconic plus-alt"></span> About</a>
+				<ul>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#value">Our Value</a></li>
+				</ul>
+      </li>
+            
+			<li><a href="#"><span class="iconic magnifying-glass"></span> Resources</a>
+				<ul>
+            <li><a href="#video">Tennis Video</a></li>
+            <li><a href="#strategy">Tennis Strategies</a></li>
+            <li><a href="#serve">Tennis Serve</a></li>
+          <li>
+
+            <!-- MODAL -->
+            <a href="#" class="btn btn-default" 
+            data-toggle="modal" 
+            data-target="#myModalpic">Top Rank Players</a>
+
+            <div class="modal" id="myModalpic">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Top Rank Players</h4>
                     </div>
-                </div>
-            </div>
-            <!-- end of Row1: Jumbotron -->
-
-            <!-- Row2: Thumbnails -->
-            <div class="row">
-                <!-- Row2 Column1 -->
-                <div class="col-xs-12
-                            col-sm-4
-                            col-md-4
-                            col-lg-4 show">
-                    <div class="img-thumbnail">
-                        <img src="http://placehold.it/800x600" class="img-fluid rounded" alt="">
-                        <div class="card-body">
-                            <h3>title</h3>
-                            <p>quick brown fox jumps over the lazy dog.</p>
-                            <a href="#" class="btn btn-primary btn-sm">click</a>
+                    <div class="modal-body">
+                        <img src="images/players.jpg" width="560" height="320">
                         </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                     </div>
+                  </div>
                 </div>
-                <!-- end of Row2 Column1 -->
+              </div>
+                    
+          </li>
 
-                <!-- Row2 Column2 -->
-                <div class="col-xs-12
-                            col-sm-4
-                            col-md-4
-                            col-lg-4 show">
-                    <div class="img-thumbnail">
-                        <img src="http://placehold.it/800x600" class="img-fluid rounded" alt="">
-                        <div class="card-body">
-                            <h3>title</h3>
-                            <p>quick brown fox jumps over the lazy dog.</p>
-                            <a href="#" class="btn btn-primary btn-sm">click</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end of Row2 Coloumn2 -->
+				</ul>
+      </li>
 
-                <!-- Row2 Column3 -->
-                <div class="col-xs-12
-                            col-sm-4
-                            col-md-4
-                            col-lg-4 show">
-                    <div class="img-thumbnail">
-                        <img src="http://placehold.it/800x600" class="img-fluid rounded" alt="">
-                        <div class="card-body">
-                            <h3>title</h3>
-                            <p>quick brown fox jumps over the lazy dog.</p>
-                            <a href="#" class="btn btn-primary btn-sm">click</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end of Row2 Column3 -->
-            </div>
-            <br>
-            <!-- end of Row2: Thumbnails -->
+			<li><a href="#"><span class="iconic map-pin"></span> Lessons</a>
+				<ul>
+					<li><a href="#program">Kids Program</a></li>
+					<li><a href="#program">Begineer Group Program</a></li>
+					<li><a href="#program">Match Program</a></li>
+					<li><a href="#private">Beginner Lesson</a></li>
+					<li><a href="#private">Intermediate Lesson</a></li>
+					<li><a href="#private">Advance Lesson</a></li>
+				</ul>
+      </li>
+      
+			<li><a href="#"><span class="iconic mail"></span> Contact</a>
+				<ul>
+          <li><a href="chat.html">Chat Online</a></li> 
+          <li><a href="#contact">Contact Us</a></li>
+					<li><a href="#maps">Tennis Courts</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clearfix"></div>
+	</nav>
+	<!-- </div> -->
+<!-- Navigation END -->
 
-            <!-- Row3: video -->
-            <div class="row">
-                <div class="col-xs-12
-                            col-sm-12
-                            col-md-12
-                            col-lg-12">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qTSDL94_Y7M" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <!-- end of Row3: video -->
+<!-- Parallax -->
+<div class="my-parallax">
+  <!-- <btn btn-primary>button</div> -->
+  <!-- <button style="margin-top:30%">test</button> -->
+  <div class="jumbotron text-center" style="background-color:rgba(165, 118, 30, 0)">
+    <br><br><br><br><br>
+    <!-- <h1><strong>Fun with Tennis</strong></h1>  -->
+    <div class="hit-the-floor" style="text-shadow: 1px 2px 3px #FF0000">Fun with Tennis</div>
+    <div class="text-center">
+    <p><i>"Competing or just for fun, whatever, simply ENJOY and try YOUR BEST." ~ Rafael Nadal</i></p> 
+  </div>
+      <a href="chat.html" class="btn btn-primary btn-lg"> Chat Online!</a>
+  </div>
 
-            <!-- Row4: Form & Text -->
-            <div class="row">
-                <!-- Row4 Column1: form -->
-                <div class="col-xs-12
-                            col-sm-6
-                            col-md-6
-                            col-lg-6 show">
-                    <div class="card card-default">
-                        <div class="card-body">
-                            <form action="" method="post">
-                                <legend class="card-header">Sign up</legend>
-                                <br>
-                                <div class="form-group">
-                                    <label for="name-id">Name: </label>
-                                    <input  type="text" 
-                                            name="NAME" 
-                                            id="name-id" 
-                                            placeholder="frank lee" 
-                                            class="form-control"
-                                            required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email-id">Email: </label>
-                                    <input  type="email" 
-                                            name="EMAIL" 
-                                            id="email-id" 
-                                            placeholder="franklee@email.com" 
-                                            class="form-control"
-                                            required>
-                                </div>
-                                <label for="">Newsletter: </label>
-                                <div class="radio">
-                                    <label>
-                                        <input  type="radio" 
-                                                name="NEWSLETTER" 
-                                                value="weekly" 
-                                                checked="checked">
-                                        send me weekly
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input  type="radio" 
-                                                name="NEWSLETTER" 
-                                                value="never">
-                                        do not send me any
-                                    </label>
-                                </div>
-                                <br>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-default">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- end of Row4 Column1 -->
-    
-                <!-- Row4 Column2: text -->
-                <div class="col-xs-12
-                            col-sm-6
-                            col-md-6
-                            col-lg-6
-                            text-center show">
-                    <h1>MY TITLE</h1>
-                    <hr>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                    </p>
-                </div>
-                <!-- end of Row4 Column2 -->
-            </div>
-            <br>
-            <!-- end of Row4: Form & Text -->
-
-            <!-- Row5: Details -->
-            <div class="row">
-                <!-- Row 5 Column1: table -->
-                <div class="col-xs-12
-                            col-sm-4
-                            col-md-4
-                            col-lg-4 show">
-                    <h3>Table title</h3>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Title 1</th>
-                                <th>Title 2</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>content 1</td>
-                                <td>content 1</td>
-                            </tr>
-                            <tr>
-                                <td>content 2</td>
-                                <td>content 2</td>
-                            </tr>
-                            <tr>
-                                <td>content 3</td>
-                                <td>content 3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- end of Row5 Column1 -->
-
-                <!-- Row5 Column2: embed map -->
-                <div class="col-xs-12
-                            col-sm-4
-                            col-md-4
-                            col-lg-4 show">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://goo.gl/kBckE1" class="embed-responsive-item"></iframe>
-                    </div>
-                </div>
-                <!-- end of Row5 Column2 -->
-
-                <!-- Row5 Column3: list group -->
-                <div class="col-xs-12
-                            col-sm-4
-                            col-md-4
-                            col-lg-4 show">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <i class="fa fa-telegram fa-fw"></i> one
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <i class="fa fa-telegram fa-fw"></i> two
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <i class="fa fa-telegram fa-fw"></i> three
-                        </a>
-                    </div>
-                </div>
-                <!-- end of Row5 Column3 -->
-            </div>
-            <hr>
-            <!-- end of Row5: Details -->
-
-            <!-- Row6 -->
-            <div class="row">
-                <div class="col-xs-12
-                            col-sm-12
-                            col-md-12
-                            col-lg-12">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fa fa-facebook fa-2x"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fa fa-twitter fa-2x"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fa fa-linkedin fa-2x"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- end of Row6 -->
-
+<!-- CAROUSEL -->
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox" style="font-size:28px" style="text-shadow: 0 0 3px #FF0000">
+        <div class="item active">
+          <P>
+              <i style="color:white">"The coaches are the best. I am so happy with the result!"<br><span>Michael Chan, student</span>
+              </i>
+          </P>
         </div>
-        <!-- end of Container -->
+        <div class="item">
+          <i style="color:white">"Amazing improvement in just three coaching sessions... Wow!"<br><span>Sally Kim, engineer</span>
+          </i>
+        </div>
+        <div class="item">
+          <i style="color:white">"Coaches emphasis on having fun.... enjoying the game while having good excercise."<br><span>Jimmy Tan, shop owner</span>
+          </i>
+        </div>
+      </div>
+      <br><br>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
 
-        <!-- JavaScript - jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-        
-        <!-- Customise JavaScript -->
-        <script src="javascript.js"></script>
+</div>
+<!-- Parallax - END -->
+
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid" style="background-color:rgba(165, 118, 30, 0.4)">
+  <div class="row">
+    <!-- <div class="col-sm-6">-->
+
+        <div class="col-xs-12
+        col-sm-6
+        col-md-6
+        col-lg-6">
+
+      <h2>About Us</h2>
+      <h4>We are a group of professional tennis coaches who is passionate about promoting tennis as a lifestyle.</h4>
+      <h4>
+        Coaches are Thomas, Robert and Ben. We have been playing tennis for more than 10 years and 
+        participated on several local tournaments for single and double. 
+      </h4>
+      <h4>
+        We pride ourselves with ablilty to provide firstly fun tennis with hard working and dedication
+        to excel that caters for all type of players. We have been trained in coaching techniques to
+        deliver consistent results. Coaches vs students are kept to minimum to ensure enough coaching 
+        time for each students to cater for individual needs.
+      </h4>
+      <h4>
+        Hope that you enjoy this web site, even if you don't engage us for coaching. There are plenty 
+        of tennis tips and interesting facts on tennis for those who are passionate about tennis. 
+        Thank you again for visiting this side.
+      </h4>
+    </div>
+    <div>
+      <!-- <span class="glyphicon glyphicon-signal logo"></span> -->
+      <img width="420" height="600" src="images/stadium.jpg"></img>
+    </div>
+  </div>
+</div>
+
+<div id="value" class="container-fluid bg-grey">
+  <div class="row">
+      <div class="col-xs-12
+      col-sm-4
+      col-md-4
+      col-lg-4">
+
+      <!-- <span class="glyphicon glyphicon-globe logo slideanim"></span> -->
+      <img  width="300" height="400" src="images/court.jpg" alt="photo">
+    </div>
+    <div class="col-sm-6">
+      <h2>Our Values</h2>
+      <h4>Founded in 2010, we strive to develop world class tennis programme to provide improvement
+          in skills and technique to achive mastery in the game of tennis. 
+      </h4>
+      <h4>
+          We provide mini tournaments to encourage competitiveness amongst students and foster 
+          positive interest to improve their skils to the next level. 
+      </h4>
+      <h4>
+        To tailor the needs for different groups or individual, we provide variaty of tennis programs
+        that fit with envision the best quality through years of experience as group of coaches.
+      </h4>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<div id="video" class="container-fluid text-center" style="background-color:rgba(165, 118, 30, 0.4)">
+  <h2>TENNIS VIDEO</h2>
+  <h4>Learn from professionals</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/GfcCD8TwoLU" frameborder="0" allowfullscreen></iframe>
+      <h4>Forehand</h4>
+    </div>
+    <div class="col-sm-4">
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/3NFeApWbC9g" frameborder="0" allowfullscreen></iframe>
+      <h4>Backhand</h4>
+    </div>
+    <div class="col-sm-4">
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/L_FCXLtUgI8" frameborder="0" allowfullscreen></iframe>
+      <h4>Serve</h4>
+    </div>
+  </div>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/3nTCLWh2_qo" frameborder="0" allowfullscreen></iframe>
+      <h4>Forehand</h4>
+    </div>
+    <div class="col-sm-4">
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/LdDwMj3_WMA" frameborder="0" allowfullscreen></iframe>
+      <h4>Backhand</h4>
+    </div>
+    <div class="col-sm-4">
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/sDynWX27zIk" frameborder="0" allowfullscreen></iframe>
+      <h4 style="color:#303030;">Serve</h4>
+    </div>
+  </div>
+</div>
+
+
+<!-- STRATEGY -->
+<div id="strategy" class="container-fluid text-center bg-grey">
+    <div class="row">
+        <div class="col-xs-12
+        col-sm-12
+        col-md-12
+        col-lg-12">
+
+    <h2>Tennis Strategies</h2>
+    <h4>Collections of some of the best tennis strategies to overcome your opponent</h4>
+    <div class="row text-center slideanim">
+
+        <div class="col-xs-12
+        col-sm-5
+        col-md-5
+        col-lg-5">
+            <div class="thumbnail">
+              <img src="images/tennis3.jpg" alt="photo" width="200" height="100">
+              <p><strong>Plan your strategies</strong></p>
+              <p>Prepare by studying your opponent's strengths and weaknesses before the game
+              </p>
+            </div>
+          </div>
+
+        <div class="col-sm-4" style="text-align: left; font-size: 16px">
+          <li><a href="http://www.improve-your-tennis.com/tennis-resources.html">How To Play Tennis Efficiently</a></li>
+          <li><a href="http://www.optimumtennis.net/tactics-of-tennis.htm">How To Play Against Every Type of Player</a></li>
+          <li><a href="http://protennistips.net/tennis-strategy/">Pro Tennis Tips - Counter Pusher and Aggressive Baseliner</a></li>
+          <li><a href="https://howtheyplay.com/individual-sports/12-Singles-Tennis-Strategy-Tips-To-Help-Your-Game">Singles Tennis Strategy Tips To Help Your Game!</a></li>
+          <li><a href="http://www.optimumtennis.net/tennis-strategy.htm">Tennis Strategy and Tactics - Advanced Tennis</a></li>
+      </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<!-- SERVE -->
+<div id="serve" class="container-fluid text-center" style="background-color:rgba(165, 118, 30, 0.4)">
+    <h2>Tennis Serve</h2>
+    <h4>One of the most difficult to master and very important parts of tennis game is to able to Serve well.</h4>
+
+    <img src="images/serve.jpg" alt="photo">
+   <p>Image via 
+    <a href="https://www.flickr.com/photos/25508895@N00/187782892/in/photolist-hArj5-i9xmz-jfYVZ-mNH29-qxXeZ-wNKTK-xJ1C1-xWysm-zkzhS-CrnEW-M77ux-29bhss-29dQGB-29ugGv-29wUbp-29yMJ5-2aoMir-2asZaE-2atckL-2auua5-2Ewxh8-34n6BD-48Rrsz-48RrsT-4tNofB-4GxGW7-4Y6vih-51Lhci-5bNV6R-5h3fQx-5iUz3V-5k8Yed-5mK1pN-5rPzuD-5xe7o1-5UugqR-6cFNH3-6cRrJd-6cSr5x-6cStTe-6dampZ-6mUE4D-6ybaru-6RVXva-6Sr2Gq-6V6zev-6XMfWp-7uk9k6-7ukwtZ-7ukGCK-7ukRLH">
+    Daniel Calonge </a>
+    <br>
+
+    <a href="http://www.tennis.com/your-game/2009/07/using-your-serve/17178/">Using Your Serve</a>
     
-    </body>
+  </p>
+    
+</div>
 
+
+<!-- PROGRAM -->
+<div id="program" class="container-fluid text-center bg-grey">
+  <h2>Tennis Programs</h2><br>
+  <h4>Diverse programs that we offers to meet the needs of groups from beginner to advance players.</h4>
+  <div class="row text-center slideanim">
+
+      <div class="col-xs-12
+      col-sm-4
+      col-md-4
+      col-lg-4">
+      <div class="thumbnail">
+        <img src="images/kids.jpg" alt="Kids" width="200" height="100">
+        <p><strong>Kids Program</strong></p>
+        <p>Teach kids fundamental of the game in the fun environment with game plays, hand eye coordination
+        </p>
+      </div>
+    </div>
+
+    <div class="col-xs-12
+    col-sm-4
+    col-md-4
+    col-lg-4">
+        <div class="thumbnail">
+          <img src="images/beginners.jpg" alt="Backhand" width="200" height="100">
+          <p><strong>Beginner Group Program</strong></p>
+          <p>Caters for group of beginners to learn simple tennis strokes to start with sound fundamental techniques to avoid tendency of building bad habbits</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12
+      col-sm-4
+      col-md-4
+      col-lg-4">
+      <div class="thumbnail">
+        <img src="images/match.jpg" alt="Match" width="200" height="100">
+        <p><strong>Match Program</strong></p>
+        <p>Emphasis on playing matches for intermediate players to gain experience to play with different styles of opponents</p>
+      </div>
+    </div>
+
+  </div><br>
+  
+
+<!-- Container (lessons Section) -->
+<div id="private" class="container-fluid" style="background-color:rgba(165, 118, 30, 0.4)">
+  <div class="text-center">
+    <h2>Private Coaching Lessons</h2>
+    <h4>Choose programme that suitable for you</h4>
+  </div>
+  <div class="row slideanim">
+
+      <div class="col-xs-12
+      col-sm-4
+      col-md-4
+      col-lg-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Beginner Lesson</h1>
+        </div>
+        <div class="panel-body">
+          <p>Footwork</p>
+          <p>Forehand</p>
+          <p>Backhand</p>
+          <p>Volley</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$45</h3>
+          <h4>per hour</h4>
+          <button class="btn btn-lg" onclick="alert('Please submit your contact below.')">Sign Up</button>
+        </div>
+      </div>      
+    </div>  
+
+    <div class="col-xs-12
+    col-sm-4
+    col-md-4
+    col-lg-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Intermediate Lesson</h1>
+        </div>
+        <div class="panel-body">
+          <p>Forehand Spins</p>
+          <p>Backhand Spins</p>
+          <p>Serve (Flat and Topspin)</p>
+          <p>Serve and Volley</p>
+        </div>
+        <div class="panel-footer">
+          <h3>S$60</h3>
+          <h4>per hour</h4>
+          <button class="btn btn-lg" onclick="alert('Please submit your contact below.')">Sign Up</button>
+        </div>
+      </div>      
+    </div>   
+
+    <div class="col-xs-12
+    col-sm-4
+    col-md-4
+    col-lg-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Advance Lesson</h1>
+        </div>
+        <div class="panel-body">
+          <p>Game Strategy</p>
+          <p>Counter Difficult Shots</p>
+          <p>Drop Shot and Lob</p>
+          <p>Power and Consistency</p>
+        </div>
+        <div class="panel-footer">
+          <h3>S$75</h3>
+          <h4>per hour</h4>
+          <button class="btn btn-lg" onclick="alert('Please submit your contact below.')">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+      <div class="col-xs-12
+      col-sm-5
+      col-md-5
+      col-lg-5">
+      <!-- <p>We will get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Singapore</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +65 12345678</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> ben@email.com</p> -->
+
+      <div class="my-container">
+          <img src="images/ben.jpg" alt="logo" class="my-face">
+          <h1 style="text-align: center; font-size:28px">Ben Sung</h1>
+          <hr class="my-hr" >
+          <ul class="fa-ul" style="text-align: center">
+            <li ><i class="fa-li fa fa-phone"></i>+65 1234 5678</li>
+            <li><i class="fa-li fa fa-envelope"></i>ben@email.com</li>
+            <li><i class="fa-li fa fa-home"></i>6 Tampines Industrial Ave 5</li>
+          </ul>
+        </div>
+
+    </div>
+
+
+    
+
+     <div class="col-xs-12
+        col-sm-7
+        col-md-7
+        col-lg-7 slideanim">
+
+        <h3 style="text-align: left">Please submit your contact and we will reply soonest possible. Thanks</h3>
+
+        <form action="https://script.google.com/macros/s/AKfycbz3RbDnd9voMfPmZ-SSC5MZcTveQvFQqqOSwS-BbfymuP0br3iu/exec" 
+        method="post"
+        class="my-form" style="border-radius: 5%">
+
+        <div class="my-form-group">
+            <label for="username-id">Name</label>
+            <input 	id="username-id" 
+                    type="text" 
+                    name="NAME"  
+                    placeholder="firstname lastname" 
+                    required>
+        </div>
+
+        <!-- type can use from  -->
+        <div class="my-form-group">
+            <label for="email-id">Email</label>
+            <input 	id="email-id" 
+                    type="email" 
+                    name="EMAIL"  
+                    placeholder="name@email.com" 
+                    required>
+        </div>
+
+        <div class="my-form-group">
+            <label for="gender-id" style="text-align: left">Gender</label>
+            <div class="col-lg-10">
+              
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="male" checked="">
+                  Male
+                </label>
+              </div>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="female">
+                  Female
+                </label>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="my-form-group">
+            <input 	type="submit" 
+                    value="Submit">
+        </div>
+        </form>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- TENNIS COURTS -->
+<!-- Google Maps -->
+
+<div id="maps" class="text-center">
+
+  <div class="text-center container-fluid" style="background-color:rgba(165, 118, 30, 0.4)">
+      <h2>Tennis Courts</h2>
+      <h4>
+        Locations of tennis courts that we book for the lessons
+      </h4>
+    
+    <div class="row">
+        <div class="col-xs-12
+                    col-sm-12
+                    col-md-12
+                    col-lg-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7820052946013!2d103.8766146510725!3d1.305919399042845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1847d5508d87%3A0x4376be65e9b351ce!2sKallang+ActiveSG+Tennis+Centre!5e0!3m2!1sen!2ssg!4v1508632220334" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.750699840915!2d103.85965150107259!3d1.325498399028504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19d6099802ef%3A0x20b8f09d3ada9c61!2sSt+Wilfred+tennis+court!5e0!3m2!1sen!2ssg!4v1508632355955" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>  
+      </div>
+    </div> <br>
+    
+    <div class="row">
+        <div class="col-xs-12
+                    col-sm-12
+                    col-md-12
+                    col-lg-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.024610518929!2d103.83803823146813!3d1.322108975210986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19c1422ca4a5%3A0xd92f19f002e87517!2sFarrer+Park+Tennis+Centre!5e0!3m2!1sen!2ssg!4v1508632682603" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.632579501495!2d103.83626266977538!3d1.3817625999999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16eaa1073345%3A0x10d6f5883abdda16!2sYio+Chu+Kang+Tennis+Centre!5e0!3m2!1sen!2ssg!4v1508632868012" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>   
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p><strong>Fun with Tennis @2017</strong></p>
+</footer>
+
+<!-- Script for smooth scrolling -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+
+
+</body>
 </html>

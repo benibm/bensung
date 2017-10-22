@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>convForm</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="dist/jquery.convform.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="demo.css">
+	<style>
+		* {
+			font-family: 'Roboto', sans-serif;
+		}
+		html, body {
+			font-size: 24px;
+		}
+
+		section#demo {
+			background: #fbfbfb;
+			position: relative;
+			padding: 0;
+			min-height: 100vh;
+			transition: height 9999s;
+		}
+		.vertical-align {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			width: 100%;
+		}
+		.card {
+			background: #fff;
+			box-shadow: 13px 13px 28px 2px rgba(0, 0, 0, 0.035);
+			padding: 7px 15px;
+		}
+	</style>
+</head>
+<body>
+
+
+	<section id="demo">
+	    <div class="vertical-align">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-6 col-sm-offset-3 col-xs-offset-0">
+	                    <div class="card no-border">
+	                        <div id="chat" class="conv-form-wrapper">
+	                            <form action="" method="GET" class="hidden">
+	                                <select conv-question="Hello! I'm a tennis coach BOT. Do you need help with your tennis lessons?">
+	                                    <option value="yes">Yes</option>
+	                                    <option value="sure">Sure!</option>
+	                                </select>
+	                                <input type="text" name="name" conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
+	                                <input type="text" conv-question="Hello, {name}:0! It's a pleasure to meet you." no-answer="true">
+	                                <select name="programmer" conv-question="So, are you a beginner in tennis?">
+	                                    <option value="yes">Yes</option>
+	                                    <option value="no">No</option>
+	                                </select>
+	                                <div conv-fork="programmer">
+	                                    <div conv-case="yes">
+	                                        <input type="text" conv-question="Great, you are in the right place!" no-answer="true">
+	                                    </div>
+	                                    <div conv-case="no">
+		                                    <select name="thought" conv-question="Sorry, you might need to contact our coaches directly for help. Do you need any other help?">
+		                                    	<option value="yes">Yes</option>
+												<option value="no">No..</option>
+												
+											
+
+											</select>
+
+											<div conv-case="no">
+												<input type="text" conv-question="Bye!" no-answer="true"></inut>
+											</div>
+
+	                                    </div>
+	                                </div>
+	                                <input type="text" conv-question="We have many great tennis tips in this website." no-answer="true">
+	                                <select name="multi[]" conv-question="What kind of improvement do you want to see?" multiple>
+	                                    <option value="Forehand">Forehand</option>
+	                                    <option value="Pop">Backhand</option>
+	                                    <option value="Country">Serve</option>
+	                                </select>
+
+
+
+	                            </form>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
+				<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 col-xs-offset-0">
+								<div class="card">
+									<a href="index.html"> Exit</a>
+								</div>
+						</div>
+				</div>
+	        </div>
+	    </div>
+	</section>
+
+
+
+	<script type="text/javascript" src="dist/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="dist/autosize.min.js"></script>
+	<script type="text/javascript" src="dist/dragscroll.js"></script>
+	<script type="text/javascript" src="dist/jquery.convform.min.js"></script>
+
+</body>
+</html>
