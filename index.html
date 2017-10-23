@@ -19,6 +19,20 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
+
+  <script>
+      $(document).ready(function() {
+        $("#ben").submit(function(e){
+          // alert("sumbit click");
+          len =$('#username-id').val().length;
+          if (len < 2) {
+            alert("Please input more than 2 characters");
+            return false;
+          }
+        });
+      });
+    </script>
+
 <!-- NAVIGATOR START -->
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
@@ -475,7 +489,7 @@
 
         <h3 style="text-align: left">Please submit your contact and we will reply soonest possible.</h3>
 
-        <form action="https://script.google.com/macros/s/AKfycbz3RbDnd9voMfPmZ-SSC5MZcTveQvFQqqOSwS-BbfymuP0br3iu/exec" 
+        <form id="ben" action="https://script.google.com/macros/s/AKfycbz3RbDnd9voMfPmZ-SSC5MZcTveQvFQqqOSwS-BbfymuP0br3iu/exec" 
         method="post"
         class="my-form" style="border-radius: 5%;text-align:left">
 
