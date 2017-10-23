@@ -202,7 +202,8 @@ footer .glyphicon {
 }
 
 /*This selector refers to ALL <input> */
-input[type]{
+input[type=text],
+input[type=email]{
 	-webkit-appearance: none; /* removes browser override style on mac */
 	/*2. set the width to fill container: 100% */
 	/*3. increase font size to: 1.5rem */
