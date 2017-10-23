@@ -19,20 +19,6 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
-
-  <script>
-      $(document).ready(function() {
-        $("#ben").submit(function(e){
-          // alert("sumbit click");
-          len =$('#username-id').val().length;
-          if (len < 2) {
-            alert("Please input more than one character");
-            return false;
-          }
-        });
-      });
-    </script>
-
 <!-- NAVIGATOR START -->
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
@@ -622,6 +608,20 @@ $(document).ready(function(){
     });
   });
 })
+</script>
+
+<!-- FRAME - Check input characters -->
+<script>
+  $(document).ready(function() {
+    $("#ben").submit(function(e){
+      // alert("sumbit click");
+      len =$('#username-id').val().length;
+      if (len < 2) {
+        alert("Please input more than one character");
+        return false;
+      }
+    });
+  });
 </script>
 
 
