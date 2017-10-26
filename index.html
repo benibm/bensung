@@ -123,7 +123,17 @@
     <div class="text-center">
     <p><i>"Competing or just for fun, whatever, simply ENJOY and try YOUR BEST." ~ Rafael Nadal</i></p> 
   </div>
-      <a href="chat.html" class="btn btn-primary btn-lg"> Chat Online!</a>
+      <!-- <a href="chat.html" class="btn btn-primary btn-lg"> Chat Online!</a> -->
+
+      <button style="color:white; background-color:rgb(122, 96, 96)" onclick="myChat()">Chat Online!</button>
+      <script>
+      function myChat() {
+          var myWindow = window.open("chat.html", "myWindows", "width=400,height=700");
+          // myWindow.document.write("<p>This is 'myWindow'</p>");
+          // myWindow.opener.document.write("<p>This is the source window!</p>");
+      }
+      </script>
+
   </div>
 
 <!-- CAROUSEL -->
